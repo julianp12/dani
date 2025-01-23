@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te amo Daniela</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dani.css">
+</head>
+<body>
+    <div class="corazon" onclick="mostrarModal(); lanzarFuegos()">
+        <span class="mensaje">Te amo Daniela</span>
+    </div>
+
+    <!-- Ventana Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal()">&times;</span>
+            <p>Daniela, cada momento contigo es un tesoro que guardo en mi corazón. Eres mi razón, mi inspiración y mi felicidad. No existe un solo día que no agradezca el haberte encontrado. Tu sonrisa ilumina mis días y tu amor llena mi vida de paz. Te amo más de lo que las palabras pueden describir, y cada vez que te miro, siento que mi amor por ti crece aún más. Eres mi todo, mi amor eterno, y no hay nada que desee más que hacerte feliz cada segundo de mi vida. 💖</p>
+        </div>
+    </div>
+
+    <div id="fuegos"></div> <!-- Contenedor para los fuegos artificiales -->
+
+    <script>
+        // Función para mostrar el modal
+        function mostrarModal() {
+            document.getElementById("modal").style.display = "block";
+        }
+
+        // Función para cerrar el modal
+        function cerrarModal() {
+            document.getElementById("modal").style.display = "none";
+        }
+
+        // Función para generar los fuegos artificiales de corazones
+        function lanzarFuegos() {
+            const contenedor = document.getElementById('fuegos');
+            for (let i = 0; i < 20; i++) {
+                const corazon = document.createElement('div');
+                corazon.classList.add('corazon-fuego');
+                corazon.style.left = `${Math.random() * 100}%`;
+                corazon.style.animationDuration = `${Math.random() * 1 + 1}s`; // Random duration
+                corazon.style.animationDelay = `${Math.random() * 0.5}s`; // Random delay
+                contenedor.appendChild(corazon);
+
+                // Eliminar el corazón después de que termine la animación
+                corazon.addEventListener('animationend', () => {
+                    corazon.remove();
+                });
+            }
+        }
+    </script>
+</body>
+</html>
