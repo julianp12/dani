@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" id="stylesheet" href="../../../public/dist/bds/latest/bds.min.css" />
+    <title>Input Native</title>
+  </head>
+
+  <body class="bc-bg-brand-P-N-pair-01-900">
+
+    <article class="bc-col">
+
+      <h2 class="bc-my-3">Input</h2>
+      <div class="bc-my-3">
+        <div class="bc-row bc-my-3">
+          <div class="bc-col-2">
+            <button class="bc-button-primary bc-button-small" id="styleLight" value="light">Light</button>
+          </div>
+          <div class="bc-col-2">
+            <button class="bc-button-primary bc-button-small" id="styleDark" value="dark">Dark</button>
+          </div>
+          <div class="bc-col-2">
+            <button class="bc-button-primary bc-button-small" id="styleSufi" value="sufi">Sufi</button>
+          </div>
+        </div>
+      </div>
+
+        <div class="bc-row bc-padding-top-2">
+            <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                <button class="bc-button-primary bc-padding-left-2 bc-button-small" aria-label="Boton" bc-button
+                    sizeButton="small" onclick="changeState(2)" tabindex="0"> Cambiar Estado a Success
+                </button>
+            </div>
+            <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                <button class="bc-button-primary bc-padding-left-2 bc-button-small" aria-label="Boton" bc-button
+                    sizeButton="small" onclick="changeState(1)" tabindex="0"> Cambiar Estado a Error
+                </button>
+            </div>
+            <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                <button class="bc-button-primary bc-padding-left-2 bc-button-small" aria-label="Boton" bc-button
+                    sizeButton="small" onclick="changeState(3)" tabindex="0"> Cambiar Estado Default
+                </button>
+            </div>
+        </div>
+
+
+        <h2 class="bc-my-3">Default</h2>
+        <div class="bc-row">
+            <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                <div class="bc-form-field">
+                    <input class="bc-input" aria-label="Input" id="id01" type="text" value="" />
+                    <label aria-label="default" for="id01">Label</label><span>Help Text</span>
+                </div>
+            </div>
+            <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                <div class="bc-form-field"><em>times</em>
+                    <input class="bc-input" aria-label="Input" id="id02" placeholder="Text" type="text" value="" />
+                    <label for="id02"></label><span>Help text</span>
+                </div>
+            </div>
+            <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                <div class="bc-form-field">
+                    <em>times</em>
+                    <input class="bc-input bc-tooltip" bc-tooltip bcTooltipText="Ingrese documento de identidad"
+                        bcTooltipPosition="bottom" aria-label="Input" id="id03" type="text" value=""/>
+                    <label for="id03">Ingrese Documento de identidad del dueño de la cuenta</label><span>Help
+                        text</span>
+                </div>
+            </div>
+            <div class="bc-col-xl-2 bc-col-lg-2  bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                <div class="bc-form-field">
+                    <input class="bc-input" aria-label="Input" id="id04" />
+                    <em>times</em>
+                    <label for="id04">Label prueba</label>
+                    <span>Help Text</span>
+                </div>
+            </div>
+            <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                <div class="bc-form-field"><em>times</em>
+                    <input class="bc-input" aria-label="Input" id="id05" type="text" value="" />
+                    <label for="id05">Label</label><span>Help text</span>
+                </div>
+            </div>
+            <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                <div class="bc-form-field">
+                    <em>times</em>
+                    <input class="bc-input" aria-label="Input" id="id03" type="text"
+                     placeholder="Placeholder" value=""/>
+                    <label for="id03">Label</label>
+                    <span>Help text</span>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="bc-my-3">Default counter</h2>
+        <div class="bc-row">
+            <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                <div class="bc-form-field">
+                    <em id="card">card</em>
+                    <input class="bc-input bc-input-error bc-input-validation bc-input-icon-left" aria-label="Input" id="idmax1" value="" maxlength="20"/>
+                    <label aria-label="default" for="idmax1">Max Length con contador</label>
+                    <div class="bc-input-container-count">
+                        <span class="bc-input-span-info">Help Text</span>
+                      <div class="bc-input-space-count"></div>
+                      <span class="bc-input-span-info bc-input-span-counter"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                <div class="bc-form-field">
+                    <em>pencil-edit</em>
+                    <input class="bc-input" aria-label="Input" id="idmax2" placeholder="Text" type="text" value="" maxlength="10"/>
+                    <label for="idmax2">Max Length sin contador</label><span>Help text</span>
+                </div>
+            </div>
+            <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                <div class="bc-form-field">
+                    <em>card-number</em>
+                    <input class="bc-input bc-tooltip bc-input-icon-left" bc-tooltip bcTooltipText="Ingrese documento de identidad"
+                        bcTooltipPosition="bottom" aria-label="Input" id="idmax3" type="number" value=""  maxlength="10"/>
+                    <label for="idmax3">Max Length tipo number</label>
+                    <div class="bc-input-container-count">
+                        <span class="bc-input-span-info">Help Text</span>
+                      <div class="bc-input-space-count"></div>
+                      <span class="bc-input-span-info bc-input-span-counter"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="bc-col-xl-2 bc-col-lg-2  bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                <div class="bc-form-field">
+                    <input class="bc-input" aria-label="Input" id="idmax4" type="number" clearCharacters="true" value=""  maxlength="10"/>
+                    <em>card-number</em>
+                    <label for="idmax4">Max Length con clearCharacters</label>
+                    <span>Help text</span>
+                </div>
+            </div>
+            <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                <div class="bc-form-field">
+                    <em>error</em>
+                    <input class="bc-input" aria-label="Input" id="idmax5" type="text" value="" />
+                    <label for="idmax5">Contador sin maxlength</label>
+                    <div class="bc-input-container-count">
+                        <span class="bc-input-span-info">Help Text</span>
+                      <div class="bc-input-space-count"></div>
+                      <span class="bc-input-span-info bc-input-span-counter"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="bc-my-3">Error</h2>
+        <div class="bc-row">
+            <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                <div class="bc-form-field">
+                    <input class="bc-input bc-input-error" aria-label="Input" id="id06" type="text" value="" />
+                    <label for="id06">Label</label><span>Help Text</span>
+                </div>
+            </div>
+            <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                <div class="bc-form-field"><em>times</em>
+                    <input class="bc-input bc-input-error" aria-label="Input" id="id07" placeholder="Text" type="text"
+                        value="" />
+                    <label for="id07"></label><span>Help text</span>
+                </div>
+            </div>
+            <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                <div class="bc-form-field">
+                    <em>times</em>
+                    <input class="bc-input bc-input-error bc-tooltip" bc-tooltip
+                        bcTooltipText="Ingrese documento de identidad" bcTooltipPosition="bottom" aria-label="Input"
+                        id="id08" type="text" value="" />
+                    <label for="id08">Ingrese Documento de identidad del dueño de la cuenta</label><span>Help
+                        text</span>
+                </div>
+            </div>
+            <div class="bc-col-xl-2 bc-col-lg-2  bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                <div class="bc-form-field">
+                    <input class="bc-input bc-input-error bc-input-validation" aria-label="Input" id="id09" />
+                    <em>times</em>
+                    <label for="id09">Label prueba</label>
+                    <span>Help Text</span>
+                </div>
+            </div>
+            <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                <div class="bc-form-field"><em>times</em>
+                    <input class="bc-input bc-input-error" aria-label="Input" id="id10" type="text" value="" />
+                    <label for="id10">Label</label><span>Help text</span>
+                </div>
+            </div>
+            <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                <div class="bc-form-field">
+                    <em>times</em>
+                    <input class="bc-input bc-input-error" aria-label="Input" id="id03" type="text"
+                     placeholder="Placeholder" value=""/>
+                    <label for="id03">Label</label>
+                    <span>Help text</span>
+                </div>
+            </div>
+        </div>
+
+
+        <h2 class="bc-my-3">Success</h2>
+        <div class="bc-row">
+            <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                <div class="bc-form-field">
+                    <input class="bc-input bc-input-success" aria-label="Input" id="id11" type="text" value="" />
+                    <label for="id11">Label</label><span></span>
+                </div>
+            </div>
+            <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                <div class="bc-form-field"><em>times</em>
+                    <input class="bc-input bc-input-success" aria-label="Input" id="id12" placeholder="Text" type="text"
+                        value="" />
+                    <label for="id12"></label><span></span>
+                </div>
+            </div>
+            <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                <div class="bc-form-field">
+                    <em>times</em>
+                    <input class="bc-input bc-input-success bc-tooltip" bc-tooltip
+                        bcTooltipText="Ingrese documento de identidad" bcTooltipPosition="bottom" aria-label="Input"
+                        id="id13" type="text" value="" />
+                    <label for="id13">Ingrese Documento de identidad del dueño de la cuenta</label><span></span>
+                </div>
+            </div>
+            <div class="bc-col-xl-2 bc-col-lg-2  bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                <div class="bc-form-field">
+                    <input class="bc-input bc-input-success" aria-label="Input" id="id14" />
+                    <em>times</em>
+                    <label for="id14">Label prueba</label>
+                    <span></span>
+                </div>
+            </div>
+            <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                <div class="bc-form-field"><em>times</em>
+                    <input class="bc-input bc-input-success" aria-label="Input" id="id15" type="text" value="" />
+                    <label for="id15">Label</label><span></span>
+                </div>
+            </div>
+            <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                <div class="bc-form-field">
+                    <em>times</em>
+                    <input class="bc-input bc-input-success" aria-label="Input" id="id03" type="text"
+                     placeholder="Placeholder" value=""/>
+                    <label for="id03">Label</label>
+                    <span>Help text</span>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="bc-my-5">Input icon right</h2>
+        <div>
+            <div class="bc-row">
+                <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                    <button class="bc-button-primary bc-padding-left-2 bc-button-small" aria-label="Boton" bc-button
+                        sizeButton="small" onclick="changeStateErrorIconRight(2)" tabindex="0"> Cambiar Estado Success
+                    </button>
+                </div>
+                <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                    <button class="bc-button-primary bc-padding-left-2 bc-button-small" aria-label="Boton" bc-button
+                        sizeButton="small" onclick="changeStateErrorIconRight(1)" tabindex="0"> Cambiar Estado a Error
+                    </button>
+                </div>
+                <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                    <button class="bc-button-primary bc-padding-left-2 bc-button-small" aria-label="Boton" bc-button
+                        sizeButton="small" onclick="changeStateErrorIconRight(3)" tabindex="0"> Cambiar Estado Default
+                    </button>
+                </div>
+            </div>
+            <div class="bc-row bc-my-2">
+                <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                    <div class="bc-form-field">
+                        <input class="bc-input bc-input-validation bc-input-date-credit-card"placeholder="Text" aria-label="Input" id="id16" type="text" value="" />
+                        <label for="id16">Label</label><span>Help Text</span>
+                    </div>
+                </div>
+                <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                    <div class="bc-form-field"><em>times</em>
+                        <input class="bc-input bc-input-validation" aria-label="Input" id="id17" placeholder="Text"
+                            type="text" value="" />
+                        <label for="id17"></label><span>Help text</span>
+                    </div>
+                </div>
+                <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                    <div class="bc-form-field">
+                        <em>times</em>
+                        <input class="bc-input bc-input-validation" aria-label="Input" id="id18" type="text"
+                            value="" /><em>times</em>
+                        <label for="id18">Label</label><span>Help text</span>
+                    </div>
+                </div>
+                <div class="bc-col-xl-2 bc-col-lg-2  bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                    <div class="bc-form-field">
+                        <input class="bc-input bc-input-validation " aria-label="Input" id="id19" />
+                        <em>times</em>
+                        <label for="id19">Label prueba</label>
+                        <span>Help Text</span>
+                    </div>
+                </div>
+                <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                    <div class="bc-form-field"><em>times</em>
+                        <input class="bc-input bc-input-validation " aria-label="Input" id="id20" type="text"
+                            value="" />
+                        <label for="id20">Label</label><span>Help text</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="bc-my-5">Input password</h2>
+        <div>
+            <div class="bc-row">
+                <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                    <button class="bc-button-primary bc-padding-left-2 bc-button-small" aria-label="Boton" bc-button
+                        sizeButton="small" onclick="changeStateErrorPassword(2)" tabindex="0"> Cambiar Estado Success
+                    </button>
+                </div>
+                <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                    <button class="bc-button-primary bc-padding-left-2 bc-button-small" aria-label="Boton" bc-button
+                        sizeButton="small" onclick="changeStateErrorPassword(1)" tabindex="0"> Cambiar Estado a Error
+                    </button>
+                </div>
+                <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                    <button class="bc-button-primary bc-padding-left-2 bc-button-small" aria-label="Boton" bc-button
+                        sizeButton="small" onclick="changeStateErrorPassword(3)" tabindex="0"> Cambiar Estado Default
+                    </button>
+                </div>
+            </div>
+            <div class="bc-row bc-my-2">
+                <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                    <div class="bc-form-field">
+                        <input class="bc-input bc-input-validation  bc-input-password" aria-label="Input" id="id31" type="password" value="" />
+                        <label for="id16">Label</label><span>Help Text</span>
+                    </div>
+                </div>
+                <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                    <div class="bc-form-field">
+                        <input class="bc-input  bc-input-password" aria-label="Input" id="id32" placeholder="Text"
+                            type="password" value="" />
+                        <label for="id17"></label><span>Help text</span>
+                    </div>
+                </div>
+                <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                    <div class="bc-form-field">
+
+                        <input class="bc-input bc-input-password" aria-label="Input" id="id33" type="password"
+                            value="" />
+                        <label for="id18">Label</label><span>Help text</span>
+                    </div>
+                </div>
+                <div class="bc-col-xl-2 bc-col-lg-2  bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                    <div class="bc-form-field">
+                        <input class="bc-input  bc-input-password" aria-label="Input" id="id34" />
+                        <label for="id19">Label prueba</label>
+                        <span>Help Text</span>
+                    </div>
+                </div>
+                <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                    <div class="bc-form-field">
+                        <input class="bc-input  bc-input-password" aria-label="Input" id="id35" type="password"
+                            value="" />
+                        <label for="id20">Label</label><span>Help text</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2>Input value</h2>
+        <div class="bc-row bc-my-3">
+            <div class=" bc-col-xs-6 bc-col-sm-12 bc-col-md-2 bc-col-lg-2 bc-col-xl-2">
+                <div class="bc-form-field">
+                    <em>currency-peso</em>
+                    <input class="bc-input bc-input-value" aria-label="Input" id="id1" placeholder="" value="" />
+                    <label for="id24">input value con decimales</label>
+                    <span>Help Text</span>
+                </div>
+            </div>
+            <div class="bc-col-xs-6 bc-col-sm-12 bc-col-md-2 bc-col-lg-2 bc-col-xl-2">
+                <div class="bc-form-field">
+                    <em>currency-euro</em>
+                    <input class="bc-input bc-input-success bc-input-value bc-input-value-int" aria-label="Input" id="id25"
+                        placeholder="" value="" />
+                    <label for="id25">input value con enteros</label>
+                    <span>Help Text</span>
+
+                </div>
+            </div>
+        </div>
+        <h2>Input Date Credit Card</h2>
+        <div class="bc-row bc-my-2">
+          <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+              <div class="bc-form-field">
+                  <input class="bc-input bc-input-validation bc-input-date-credit-card"placeholder="MM/AA" aria-label="Input" id="id50" type="text" value="" monthMsgError="prueba mes" datedMsgError="prueba fecha" incompleteMsgError="prueba falta de datos " />
+                  <label for=>Fecha de vencimiento</label><span>Mes / Año</span>
+              </div>
+          </div>
+          <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+          <div class="bc-form-field">
+              <input class="bc-input bc-input-validation bc-input-date-credit-card"placeholder="MM/AA" aria-label="Input" id="id50" type="text" value=""  />
+              <label for=>Fecha de vencimiento</label><span>Mes / Año</span>
+          </div>
+      </div>
+
+
+        </div>
+        <h2>Input value icon right</h2>
+        <div class="bc-row bc-my-3">
+            <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                <button class="bc-button-primary bc-padding-left-2 bc-button-small" aria-label="Boton" bc-button
+                    sizeButton="small" onclick="changeStateInputValueIconRight(2)" tabindex="0"> Cambiar Estado Success
+                </button>
+            </div>
+            <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                <button class="bc-button-primary bc-padding-left-2 bc-button-small" aria-label="Boton" bc-button
+                    sizeButton="small" onclick="changeStateInputValueIconRight(1)" tabindex="0"> Cambiar Estado a Error
+                </button>
+            </div>
+            <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-2 bc-col-sm-12 bc-col-xs-6">
+                <button class="bc-button-primary bc-Fpadding-left-2 bc-button-small" aria-label="Boton" bc-button
+                    sizeButton="small" onclick="changeStateInputValueIconRight(3)" tabindex="0"> Cambiar Estado Default
+                </button>
+            </div>
+        </div>
+        <div class="bc-row bc-my-3">
+            <div class="bc-col-xs-6 bc-col-sm-12 bc-col-Fmd-2 bc-col-lg-2 bc-col-xl-2 bc-my-2">
+                <div class="bc-form-field">
+                    <em>currency-euro</em>
+                    <input class="bc-input bc-input-value bc-input-validation" aria-label="Input" id="id30"
+                        placeholder="Text" value="" /><span></span>
+                </div>
+            </div>
+        </div>
+        <h2>Input franchise</h2>
+        <div class="bc-row bc-my-3">
+            <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-3 bc-col-sm-12 bc-col-xs-6">
+                <button class="bc-button-primary bc-padding-left-2 bc-button-small" aria-label="Boton" bc-button
+                    sizeButton="small" onclick="changeStateInputFranchise(2)" tabindex="0"> Cambiar Estado Success
+                </button>
+            </div>
+            <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-3 bc-col-sm-12 bc-col-xs-6">
+                <button class="bc-button-primary bc-padding-left-2 bc-button-small" aria-label="Boton" bc-button
+                    sizeButton="small" onclick="changeStateInputFranchise(1)" tabindex="0"> Cambiar Estado a Error
+                </button>
+            </div>
+            <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-3 bc-col-sm-12 bc-col-xs-6">
+                <button class="bc-button-primary bc-padding-left-2 bc-button-small" aria-label="Boton" bc-button
+                    sizeButton="small" onclick="changeStateInputFranchise(3)" tabindex="0"> Cambiar Estado Default
+                </button>
+            </div>
+
+            <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-3 bc-col-sm-12 bc-col-xs-6">
+                <button class="bc-button-primary bc-padding-left-2 bc-button-small" aria-label="Boton" bc-button
+                    sizeButton="small" onclick="changeValueFranchise(8552145458454)" tabindex="0"> cambiar Value
+                </button>
+            </div>
+        </div>
+        <div class="bc-row bc-my-3">
+            <div class="bc-col-xl-2 bc-col-lg-2  bc-col-md-3 bc-col-sm-12 bc-col-xs-6">
+                <div class="bc-form-field">
+                    <em class="franchise-logo" id="card">card</em>
+                    <input class="bc-input bc-input-validation bc-input-franchise" data-isfranchise="true"  type="text"  aria-label="Input" id="pepe" placeholder="0000 0000 0000 0000" value="" maxlength="19"/>
+                    <span>Help Text</span>
+                    <label for="pepe">Número de la tarjeta </label>
+                </div>
+            </div>
+            <div class="bc-col-xl-2 bc-col-lg-2  bc-col-md-3 bc-col-sm-12 bc-col-xs-6">
+                <div class="bc-form-field">
+                    <em class="franchise-logo" id="card">card</em>
+                    <input class="bc-input bc-input-validation bc-input-franchise" data-isfranchise="true"  type="text"  aria-label="Input" id="pepito" placeholder="0000 0000 0000 0000" value="" maxlength="19"/>
+                    <span>Help Text</span>
+                    <label for="pepito">Número de la tarjeta </label>
+                </div>
+            </div>
+            <div class="bc-col-xl-2 bc-col-lg-2  bc-col-md-3 bc-col-sm-12 bc-col-xs-6">
+                <div class="bc-form-field">
+                    <em class="franchise-logo" id="card">card</em>
+                    <input class="bc-input bc-input-validation bc-input-franchise" data-isfranchise="true"  type="text"  aria-label="Input" id="pepito2" placeholder="0000 0000 0000 0000" value="" maxlength="19"/>
+                    <span>Número de tarjeta incompleto1</span>
+                    <span>Número de tarjeta incompleto</span>
+                    <label for="pepito2">Número de la tarjeta </label>
+                </div>
+            </div>
+
+        </div>
+
+     <h2 class="bc-my-3">Input Value Currency</h2>
+      <div class="bc-row bc-my-3">
+        <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-3 bc-col-sm-12 bc-col-xs-6 bc-mt-3">
+          <button
+            class="bc-button-primary bc-padding-left-2 bc-button-small"
+            aria-label="Boton"
+            bc-button
+            sizeButton="small"
+            onclick="changeStateInputDivisa(2)"
+            tabindex="0"
+          >
+            Cambiar Estado Success
+          </button>
+        </div>
+        <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-3 bc-col-sm-12 bc-col-xs-6 bc-mt-3">
+          <button
+            class="bc-button-primary bc-padding-left-2 bc-button-small"
+            aria-label="Boton"
+            bc-button
+            sizeButton="small"
+            onclick="changeStateInputDivisa(1)"
+            tabindex="0"
+          >
+            Cambiar Estado a Error
+          </button>
+        </div>
+        <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-3 bc-col-sm-12 bc-col-xs-6 bc-mt-3">
+          <button
+            class="bc-button-primary bc-padding-left-2 bc-button-small"
+            aria-label="Boton"
+            bc-button
+            sizeButton="small"
+            onclick="changeStateInputDivisa(3)"
+            tabindex="0"
+          >
+            Cambiar Estado Default
+          </button>
+        </div>
+      </div>
+      <div class="bc-row">
+        <div class="bc-col-xl-4 bc-col-lg-4 bc-col-md-4 bc-col-sm-12 bc-col-xs-6">
+          <div class="bc-form-field bc-divisa-cop">
+            <em>currency-peso</em>
+            <input class="bc-input bc-input-value bc-input-validation" aria-label="peso colombiano" id="divisa1" placeholder="" value="" />
+            <label for="divisa1">Ingresa el valor a pagar</label>
+            <span>Help text</span>
+          </div>
+        </div>
+
+        <div class="bc-col-xl-4 bc-col-lg-4 bc-col-md-4 bc-col-sm-12 bc-col-xs-6">
+          <div class="bc-form-field bc-divisa-usd">
+            <em>currency-peso</em>
+            <input class="bc-input bc-input-value bc-input-validation" aria-label="dolar estadounidense" id="divisa2" placeholder="" value="" />
+            <label for="divisa2">Ingresa el valor a pagar</label>
+            <span>Help text</span>
+          </div>
+        </div>
+
+        <div class="bc-col-xl-4 bc-col-lg-4 bc-col-md-4 bc-col-sm-12 bc-col-xs-6">
+          <div class="bc-form-field bc-divisa-eur">
+            <em>currency-euro</em>
+            <input class="bc-input bc-input-value bc-input-validation" aria-label="euros" id="divisa3" placeholder="" value="" />
+            <label for="divisa3">Ingresa el valor a pagar</label>
+            <span>Help text</span>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="bc-my-3">Input Value Currency Without Decimals</h2>
+      <div class="bc-row bc-my-3">
+        <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-3 bc-col-sm-12 bc-col-xs-6 bc-mt-3">
+          <button
+            class="bc-button-primary bc-padding-left-2 bc-button-small"
+            aria-label="Boton"
+            bc-button
+            sizeButton="small"
+            onclick="changeStateInputDivisaWithoutDecimals(2)"
+            tabindex="0"
+          >
+            Cambiar Estado Success
+          </button>
+        </div>
+        <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-3 bc-col-sm-12 bc-col-xs-6 bc-mt-3">
+          <button
+            class="bc-button-primary bc-padding-left-2 bc-button-small"
+            aria-label="Boton"
+            bc-button
+            sizeButton="small"
+            onclick="changeStateInputDivisaWithoutDecimals(1)"
+            tabindex="0"
+          >
+            Cambiar Estado a Error
+          </button>
+        </div>
+        <div class="bc-col-xl-2 bc-col-lg-2 bc-col-md-3 bc-col-sm-12 bc-col-xs-6 bc-mt-3">
+          <button
+            class="bc-button-primary bc-padding-left-2 bc-button-small"
+            aria-label="Boton"
+            bc-button
+            sizeButton="small"
+            onclick="changeStateInputDivisaWithoutDecimals(3)"
+            tabindex="0"
+          >
+            Cambiar Estado Default
+          </button>
+        </div>
+      </div>
+      <div class="bc-row">
+        <div class="bc-col-xl-4 bc-col-lg-4 bc-col-md-4 bc-col-sm-12 bc-col-xs-6">
+          <div class="bc-form-field bc-divisa-cop">
+            <em>currency-peso</em>
+            <input class="bc-input bc-input-value bc-input-validation" aria-label="peso colombiano" id="divisa4" allow-decimals="false" placeholder="" value="" />
+            <label for="divisa1">Ingresa el valor a pagar</label>
+            <span>Help text</span>
+          </div>
+        </div>
+
+        <div class="bc-col-xl-4 bc-col-lg-4 bc-col-md-4 bc-col-sm-12 bc-col-xs-6">
+          <div class="bc-form-field bc-divisa-usd">
+            <em>currency-peso</em>
+            <input class="bc-input bc-input-value bc-input-validation" aria-label="dolar estadounidense" id="divisa5" allow-decimals="false" placeholder="" value="" />
+            <label for="divisa2">Ingresa el valor a pagar</label>
+            <span>Help text</span>
+          </div>
+        </div>
+
+        <div class="bc-col-xl-4 bc-col-lg-4 bc-col-md-4 bc-col-sm-12 bc-col-xs-6">
+          <div class="bc-form-field bc-divisa-eur">
+            <em>currency-euro</em>
+            <input class="bc-input bc-input-value bc-input-validation" aria-label="euros" id="divisa6" allow-decimals="false" placeholder="" value="" />
+            <label for="divisa3">Ingresa el valor a pagar</label>
+            <span>Help text</span>
+          </div>
+        </div>
+      </div>
+    </article>
+  </body>
+  <script src="../../../public/dist/bds/latest/bds.min.js"></script>
+  <script>
+    const handleLoad = () => {
+      const buttons = document.querySelectorAll("#styleLight, #styleDark, #styleSufi");
+      buttons.forEach((button) => button.addEventListener("click", handleClick));
+    };
+
+    const handleClick = (event) => {
+      const stylesheet = document.getElementById("stylesheet");
+      const themeMap = {
+        light: "../../../public/dist/bds/latest/bds.min.css",
+        dark: "../../../public/dist/bds/latest/bds-black.min.css",
+        sufi: "../../../public/dist/sufi/latest/sufi.min.css",
+      };
+
+      const theme = event.target.value;
+      if (themeMap[theme]) {
+        stylesheet.href = themeMap[theme];
+      }
+    };
+
+    window.addEventListener("load", handleLoad);
+  </script>
+  <script>
+    const bcInputBehavior = new BcInputBehavior();
+    for (let i = 1; i <= 50; i++) {
+      if (document.getElementById(`id${i}`)) {
+        bcInputBehavior.setId(`id${i}`);
+        bcInputBehavior.setUp();
+        bcInputBehavior.setUpAll();
+      }
+    }
+
+    bcInputBehavior.eventValueOutput = (data) => {
+    }
+
+
+    function changeState(state) {
+
+      const element = document.getElementById("id1");
+
+      if (state == 2) {
+        if (element.classList.contains("bc-input-error")) {
+          element.classList.remove("bc-input-error");
+        }
+        element.classList.add("bc-input-success");
+      } else if (state == 1) {
+        if (element.classList.contains("bc-input-success")) {
+          element.classList.remove("bc-input-success");
+        }
+        element.classList.add("bc-input-error");
+      } else {
+        if (element.classList.contains("bc-input-success")) {
+          element.classList.remove("bc-input-success");
+        }
+        if (element.classList.contains("bc-input-error")) {
+          element.classList.remove("bc-input-error");
+        }
+        element.classList.add("bc-input");
+      }
+    }
+
+    function changeStateErrorIconRight(state) {
+      const elementid16 = document.getElementById("id16");
+      const elementid17 = document.getElementById("id17");
+      const elementid18 = document.getElementById("id18");
+      const elementid19 = document.getElementById("id19");
+      const elementid20 = document.getElementById("id20");
+
+      for (let i = 16; i <= 20; i++) {
+        bcInputBehavior.setId(`id${i}`);
+        bcInputBehavior.setUp();
+      }
+      if (state == 2) {
+        if (elementid16.classList.contains("bc-input-error")) {
+          elementid16.classList.remove("bc-input-error");
+        }
+        if (elementid17.classList.contains("bc-input-error")) {
+          elementid17.classList.remove("bc-input-error");
+        }
+        if (elementid18.classList.contains("bc-input-error")) {
+          elementid18.classList.remove("bc-input-error");
+        }
+        if (elementid19.classList.contains("bc-input-error")) {
+          elementid19.classList.remove("bc-input-error");
+        }
+        if (elementid20.classList.contains("bc-input-error")) {
+          elementid20.classList.remove("bc-input-error");
+        }
+        elementid16.classList.add("bc-input-success");
+        elementid17.classList.add("bc-input-success");
+        elementid18.classList.add("bc-input-success");
+        elementid19.classList.add("bc-input-success");
+        elementid20.classList.add("bc-input-success");
+      } else if (state == 1) {
+        if (elementid16.classList.contains("bc-input-success")) {
+          elementid16.classList.remove("bc-input-success");
+        }
+        if (elementid17.classList.contains("bc-input-success")) {
+          elementid17.classList.remove("bc-input-success");
+        }
+        if (elementid18.classList.contains("bc-input-success")) {
+          elementid18.classList.remove("bc-input-success");
+        }
+        if (elementid19.classList.contains("bc-input-success")) {
+          elementid19.classList.remove("bc-input-success");
+        }
+        if (elementid20.classList.contains("bc-input-success")) {
+          elementid20.classList.remove("bc-input-success");
+        }
+        elementid16.classList.add("bc-input-error");
+        elementid17.classList.add("bc-input-error");
+        elementid18.classList.add("bc-input-error");
+        elementid19.classList.add("bc-input-error");
+        elementid20.classList.add("bc-input-error");
+      } else {
+        if (elementid16.classList.contains("bc-input-success")) {
+          elementid16.classList.remove("bc-input-success");
+        }
+        if (elementid17.classList.contains("bc-input-success")) {
+          elementid17.classList.remove("bc-input-success");
+        }
+        if (elementid18.classList.contains("bc-input-success")) {
+          elementid18.classList.remove("bc-input-success");
+        }
+        if (elementid19.classList.contains("bc-input-success")) {
+          elementid19.classList.remove("bc-input-success");
+        }
+        if (elementid20.classList.contains("bc-input-success")) {
+          elementid20.classList.remove("bc-input-success");
+        }
+        if (elementid16.classList.contains("bc-input-error")) {
+          elementid16.classList.remove("bc-input-error");
+        }
+        if (elementid17.classList.contains("bc-input-error")) {
+          elementid17.classList.remove("bc-input-error");
+        }
+        if (elementid18.classList.contains("bc-input-error")) {
+          elementid18.classList.remove("bc-input-error");
+        }
+        if (elementid19.classList.contains("bc-input-error")) {
+          elementid19.classList.remove("bc-input-error");
+        }
+        if (elementid20.classList.contains("bc-input-error")) {
+          elementid20.classList.remove("bc-input-error");
+        }
+        elementid16.classList.add("bc-input");
+        elementid17.classList.add("bc-input");
+        elementid18.classList.add("bc-input");
+        elementid19.classList.add("bc-input");
+        elementid20.classList.add("bc-input");
+      }
+    }
+    function changeStateErrorPassword(state) {
+      const elementid16 = document.getElementById("id31");
+      const elementid17 = document.getElementById("id32");
+      const elementid18 = document.getElementById("id33");
+      const elementid19 = document.getElementById("id34");
+      const elementid20 = document.getElementById("id35");
+      for (let i = 30; i <= 35; i++) {
+        bcInputBehavior.setId(`id${i}`);
+        bcInputBehavior.setUp();
+      }
+      if (state == 2) {
+        if (elementid16.classList.contains("bc-input-error")) {
+          elementid16.classList.remove("bc-input-error");
+        }
+        if (elementid17.classList.contains("bc-input-error")) {
+          elementid17.classList.remove("bc-input-error");
+        }
+        if (elementid18.classList.contains("bc-input-error")) {
+          elementid18.classList.remove("bc-input-error");
+        }
+        if (elementid19.classList.contains("bc-input-error")) {
+          elementid19.classList.remove("bc-input-error");
+        }
+        if (elementid20.classList.contains("bc-input-error")) {
+          elementid20.classList.remove("bc-input-error");
+        }
+        elementid16.classList.add("bc-input-success");
+        elementid17.classList.add("bc-input-success");
+        elementid18.classList.add("bc-input-success");
+        elementid19.classList.add("bc-input-success");
+        elementid20.classList.add("bc-input-success");
+      } else if (state == 1) {
+        if (elementid16.classList.contains("bc-input-success")) {
+          elementid16.classList.remove("bc-input-success");
+        }
+        if (elementid17.classList.contains("bc-input-success")) {
+          elementid17.classList.remove("bc-input-success");
+        }
+        if (elementid18.classList.contains("bc-input-success")) {
+          elementid18.classList.remove("bc-input-success");
+        }
+        if (elementid19.classList.contains("bc-input-success")) {
+          elementid19.classList.remove("bc-input-success");
+        }
+        if (elementid20.classList.contains("bc-input-success")) {
+          elementid20.classList.remove("bc-input-success");
+        }
+        elementid16.classList.add("bc-input-error");
+        elementid17.classList.add("bc-input-error");
+        elementid18.classList.add("bc-input-error");
+        elementid19.classList.add("bc-input-error");
+        elementid20.classList.add("bc-input-error");
+      } else {
+        if (elementid16.classList.contains("bc-input-success")) {
+          elementid16.classList.remove("bc-input-success");
+        }
+        if (elementid17.classList.contains("bc-input-success")) {
+          elementid17.classList.remove("bc-input-success");
+        }
+        if (elementid18.classList.contains("bc-input-success")) {
+          elementid18.classList.remove("bc-input-success");
+        }
+        if (elementid19.classList.contains("bc-input-success")) {
+          elementid19.classList.remove("bc-input-success");
+        }
+        if (elementid20.classList.contains("bc-input-success")) {
+          elementid20.classList.remove("bc-input-success");
+        }
+        if (elementid16.classList.contains("bc-input-error")) {
+          elementid16.classList.remove("bc-input-error");
+        }
+        if (elementid17.classList.contains("bc-input-error")) {
+          elementid17.classList.remove("bc-input-error");
+        }
+        if (elementid18.classList.contains("bc-input-error")) {
+          elementid18.classList.remove("bc-input-error");
+        }
+        if (elementid19.classList.contains("bc-input-error")) {
+          elementid19.classList.remove("bc-input-error");
+        }
+        if (elementid20.classList.contains("bc-input-error")) {
+          elementid20.classList.remove("bc-input-error");
+        }
+        elementid16.classList.add("bc-input");
+        elementid17.classList.add("bc-input");
+        elementid18.classList.add("bc-input");
+        elementid19.classList.add("bc-input");
+        elementid20.classList.add("bc-input");
+      }
+    }
+    function changeStateInputValueIconRight(state) {
+      const elementid30 = document.getElementById("id30");
+      if (state == 2) {
+        if (elementid30.classList.contains("bc-input-error")) {
+          elementid30.classList.remove("bc-input-error");
+        }
+        elementid30.classList.add("bc-input-success");
+      } else if (state == 1) {
+        if (elementid30.classList.contains("bc-input-success")) {
+          elementid30.classList.remove("bc-input-success");
+        }
+        elementid30.classList.add("bc-input-error");
+      } else {
+        if (elementid30.classList.contains("bc-input-success")) {
+          elementid30.classList.remove("bc-input-success");
+        }
+        if (elementid30.classList.contains("bc-input-error")) {
+          elementid30.classList.remove("bc-input-error");
+        }
+      }
+    }
+    function changeStateInputFranchise(state) {
+      const elementid36 = document.getElementById("pepito");
+      const elementid37 = document.getElementById("pepe");
+      const elementid38 = document.getElementById("pepito2");
+
+      if (state == 2) {
+        if (elementid36.classList.contains("bc-input-error")) {
+          elementid36.classList.remove("bc-input-error");
+        }
+        if (elementid37.classList.contains("bc-input-error")) {
+          elementid37.classList.remove("bc-input-error");
+        }
+        if (elementid38.classList.contains("bc-input-error")) {
+          elementid38.classList.remove("bc-input-error");
+        }
+
+        elementid36.classList.add("bc-input-success");
+        elementid37.classList.add("bc-input-success");
+        elementid38.classList.add("bc-input-success");
+      } else if (state == 1) {
+        if (elementid36.classList.contains("bc-input-success")) {
+          elementid36.classList.remove("bc-input-success");
+        }
+        if (elementid37.classList.contains("bc-input-success")) {
+          elementid37.classList.remove("bc-input-success");
+        }
+        if (elementid38.classList.contains("bc-input-success")) {
+          elementid38.classList.remove("bc-input-success");
+        }
+
+        elementid36.classList.add("bc-input-error");
+        elementid37.classList.add("bc-input-error");
+        elementid38.classList.add("bc-input-error");
+      } else {
+        if (elementid36.classList.contains("bc-input-success")) {
+          elementid36.classList.remove("bc-input-success");
+        }
+        if (elementid37.classList.contains("bc-input-success")) {
+          elementid37.classList.remove("bc-input-success");
+        }
+        if (elementid36.classList.contains("bc-input-error")) {
+          elementid36.classList.remove("bc-input-error");
+        }
+        if (elementid37.classList.contains("bc-input-error")) {
+          elementid37.classList.remove("bc-input-error");
+        }
+
+        if (elementid38.classList.contains("bc-input-success")) {
+          elementid38.classList.remove("bc-input-success");
+        }
+
+        if (elementid38.classList.contains("bc-input-error")) {
+          elementid38.classList.remove("bc-input-error");
+        }
+      }
+    }
+    function changeStateInputDivisa(state){
+      const elementDivisa1 = document.getElementById("divisa1");
+      const elementDivisa2 = document.getElementById("divisa2");
+      const elementDivisa3 = document.getElementById("divisa3");
+
+      if(state === 2){
+        if (elementDivisa1.classList.contains("bc-input-error")) {
+          elementDivisa1.classList.remove("bc-input-error");
+        }
+        if (elementDivisa2.classList.contains("bc-input-error")) {
+          elementDivisa2.classList.remove("bc-input-error");
+        }
+        if (elementDivisa3.classList.contains("bc-input-error")) {
+          elementDivisa3.classList.remove("bc-input-error");
+        }
+
+        elementDivisa1.classList.add("bc-input-success");
+        elementDivisa2.classList.add("bc-input-success");
+        elementDivisa3.classList.add("bc-input-success");
+      } else if(state === 1){
+        if (elementDivisa1.classList.contains("bc-input-success")) {
+          elementDivisa1.classList.remove("bc-input-success");
+        }
+        if (elementDivisa2.classList.contains("bc-input-success")) {
+          elementDivisa2.classList.remove("bc-input-success");
+        }
+        if (elementDivisa3.classList.contains("bc-input-success")) {
+          elementDivisa3.classList.remove("bc-input-success");
+        }
+
+        elementDivisa1.classList.add("bc-input-error");
+        elementDivisa2.classList.add("bc-input-error");
+        elementDivisa3.classList.add("bc-input-error");
+      } else {
+        if (elementDivisa1.classList.contains("bc-input-success")) {
+          elementDivisa1.classList.remove("bc-input-success");
+        }
+        if (elementDivisa2.classList.contains("bc-input-success")) {
+          elementDivisa2.classList.remove("bc-input-success");
+        }
+        if (elementDivisa1.classList.contains("bc-input-error")) {
+          elementDivisa1.classList.remove("bc-input-error");
+        }
+        if (elementDivisa2.classList.contains("bc-input-error")) {
+          elementDivisa2.classList.remove("bc-input-error");
+        }
+
+        if (elementDivisa3.classList.contains("bc-input-success")) {
+          elementDivisa3.classList.remove("bc-input-success");
+        }
+
+        if (elementDivisa3.classList.contains("bc-input-error")) {
+          elementDivisa3.classList.remove("bc-input-error");
+        }
+      }
+
+    }
+    function changeStateInputDivisaWithoutDecimals(state){
+      const elementDivisa4 = document.getElementById("divisa4");
+      const elementDivisa5 = document.getElementById("divisa5");
+      const elementDivisa6 = document.getElementById("divisa6");
+
+      if(state === 2){
+        if (elementDivisa4.classList.contains("bc-input-error")) {
+          elementDivisa4.classList.remove("bc-input-error");
+        }
+        if (elementDivisa5.classList.contains("bc-input-error")) {
+          elementDivisa5.classList.remove("bc-input-error");
+        }
+        if (elementDivisa6.classList.contains("bc-input-error")) {
+          elementDivisa6.classList.remove("bc-input-error");
+        }
+
+        elementDivisa4.classList.add("bc-input-success");
+        elementDivisa5.classList.add("bc-input-success");
+        elementDivisa6.classList.add("bc-input-success");
+      } else if(state === 1){
+        if (elementDivisa4.classList.contains("bc-input-success")) {
+          elementDivisa4.classList.remove("bc-input-success");
+        }
+        if (elementDivisa5.classList.contains("bc-input-success")) {
+          elementDivisa5.classList.remove("bc-input-success");
+        }
+        if (elementDivisa6.classList.contains("bc-input-success")) {
+          elementDivisa6.classList.remove("bc-input-success");
+        }
+
+        elementDivisa4.classList.add("bc-input-error");
+        elementDivisa5.classList.add("bc-input-error");
+        elementDivisa6.classList.add("bc-input-error");
+      } else {
+        if (elementDivisa4.classList.contains("bc-input-success")) {
+          elementDivisa4.classList.remove("bc-input-success");
+        }
+        if (elementDivisa5.classList.contains("bc-input-success")) {
+          elementDivisa5.classList.remove("bc-input-success");
+        }
+        if (elementDivisa4.classList.contains("bc-input-error")) {
+          elementDivisa4.classList.remove("bc-input-error");
+        }
+        if (elementDivisa5.classList.contains("bc-input-error")) {
+          elementDivisa5.classList.remove("bc-input-error");
+        }
+
+        if (elementDivisa6.classList.contains("bc-input-success")) {
+          elementDivisa6.classList.remove("bc-input-success");
+        }
+
+        if (elementDivisa6.classList.contains("bc-input-error")) {
+          elementDivisa6.classList.remove("bc-input-error");
+        }
+      }
+
+    }
+
+    let initialValues = [
+      {
+        franchise: "AMEX",
+        logo: {
+          urlImgWhite: "/bds/6.54.0/assets/icons/logos/amex.svg",
+          urlImgBlack: "/bds/6.54.0/assets/icons/logos/amex-white.svg",
+        },
+        maxLength: 15,
+        matchPattern: [8],
+        spacingPositions: [5, 10, 15],
+        pattern: 1,
+      },
+      {
+        franchise: "Mastercard",
+        logo: {
+          urlImgWhite: "/bds/6.54.0/assets/icons/logos/mastercard.svg",
+          urlImgBlack: "/bds/6.54.0/assets/icons/logos/mastercard.svg",
+        },
+        maxLength: 16,
+        matchPattern: [55],
+        spacingPositions: [4, 8, 12, 16],
+        pattern: 2,
+      },
+      {
+        franchise: "VISA",
+        logo: {
+          urlImgWhite: "/bds/6.54.0/assets/icons/logos/visa.svg",
+          urlImgBlack: "/bds/6.54.0/assets/icons/logos/visa-white.svg",
+        },
+        maxLength: 16,
+        matchPattern: [4],
+        spacingPositions: [4, 8, 12, 16],
+        pattern: 1,
+      },
+      {
+        franchise: null,
+        maxLength: 16,
+        matchPattern: [],
+        spacingPositions: [4, 8, 12, 16],
+        pattern: null,
+      },
+    ];
+    let valuesSearch = [3, 4, 5, 91, 8, 55];
+
+    const inputFranchaise = new BcInputBehavior();
+    inputFranchaise.setId("pepito");
+    inputFranchaise.initInputfranchise(initialValues);
+    inputFranchaise.valuesSearchMatchfranchise(valuesSearch);
+    inputFranchaise.setUp();
+
+    const inputFranchaise2 = new BcInputBehavior();
+    inputFranchaise2.setId("pepe");
+    inputFranchaise2.initInputfranchise(initialValues);
+    inputFranchaise2.valuesSearchMatchfranchise(valuesSearch);
+    inputFranchaise2.setUp();
+
+    const inputFranchaise3 = new BcInputBehavior();
+    inputFranchaise3.setId("pepito2");
+    inputFranchaise3.initInputfranchise(initialValues);
+    inputFranchaise3.valuesSearchMatchfranchise(valuesSearch);
+    const inputExample = document.getElementById("pepito2");
+    inputExample.value = 5521452;
+    inputFranchaise3.setUp();
+    inputExample.value = 55214522;
+    function changeValueFranchise(value) {
+      inputExample.value = value;
+    }
+
+    inputDivisa1 = new BcInputBehavior();
+    inputDivisa1.setId('divisa1');
+    inputDivisa1.setUp();
+
+    inputDivisa2 = new BcInputBehavior();
+    inputDivisa2.setId('divisa2');
+    inputDivisa2.setUp();
+
+    inputDivisa3 = new BcInputBehavior();
+    inputDivisa3.setId('divisa3');
+    inputDivisa3.setUp();
+
+    inputDivisa4 = new BcInputBehavior();
+    inputDivisa4.setId('divisa4');
+    inputDivisa4.setUp();
+
+    inputDivisa5 = new BcInputBehavior();
+    inputDivisa5.setId('divisa5');
+    inputDivisa5.setUp();
+
+    inputDivisa6 = new BcInputBehavior();
+    inputDivisa6.setId('divisa6');
+    inputDivisa6.setUp();
+
+    BcTooltipBehavior.setUpAll();
+  </script>
+</html>
