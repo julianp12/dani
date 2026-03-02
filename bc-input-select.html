@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='../../../public/dist/bds/latest/bds.min.css'>
+    <title>bc-input-select</title>
+</head>
+
+<body class="bc-bg-brand-P-N-pair-01-900">
+    <div class="bc-container bc-pt-5">
+        <div class="bc-row">
+            <div class="bc-col-4">
+                <div class="bc-input-select" id="ua.ua" multiple="multiple" disabled="disabled"><input class="bc-input"
+                        aria-hidden="true" id="idSelect" type="text" value="" /><em class="bc-input-select-toggle"
+                        aria-controls="id-content" aria-hidden="true">arrow2-down</em><label for="idSelect"
+                        aria-label="State">State</label><span>Validate</span>
+                    <ul class="bc-input-select-content" id="id-content"></ul>
+                </div>
+            </div>
+            <div class="bc-col-4">
+                <div class="bc-input-select" id="ua.ua2"><em aria-hidden="true">cloud</em><input class="bc-input"
+                        aria-label="State" id="idSelect2" type="text" value="" /><em class="bc-input-select-toggle"
+                        aria-controls="id-content-2" aria-hidden="true">arrow2-down</em><label
+                        for="idSelect2">State</label>
+                    <ul class="bc-input-select-content" id="id-content-2">
+                        <li class="bc-input-select-item"><span>Hola</span></li>
+                        <li class="bc-input-select-item"><span>Adios</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div><br /><br />
+        <div class="bc-row">
+            <div class="bc-col-4">
+                <div class="bc-input-select" id="ua.ua3" filter="filter"><input class="bc-input" aria-label="Filter"
+                        id="idSelect3" type="text" value="" /><em class="bc-input-select-toggle"
+                        aria-controls="id-content-3" aria-hidden="true">arrow2-down</em><label
+                        for="idSelect3">Filter</label><span>Validate</span>
+                    <ul class="bc-input-select-content" id="id-content-3"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='../../../public/dist/bds/latest/bds.min.js'></script>
+    <script>
+        const selectComponent = new BcInputSelectBehavior();
+        selectComponent.setId('ua.ua');
+        selectComponent.setSelectedItemsDisplay('{0} Guerreros Z Seleccionados');
+        selectComponent.setItems([{
+            label: 'Vegeta',
+            value: 'Resplandor Final',
+        },
+        {
+            label: 'Gokú',
+            value: {
+                human: true,
+            },
+            icon: 'times',
+        },
+            'Krilin',
+        ]);
+        selectComponent.outputFunction = (data) => { };
+        selectComponent.setUp();
+        selectComponent.setDefaultValue('Krilin');
+
+        const selectComponent2 = new BcInputSelectBehavior();
+        selectComponent2.setId('ua.ua2');
+        selectComponent2.setItems([{
+            label: 'Vegeta',
+            value: 'Resplandor Final',
+        },
+        {
+            label: 'Goku',
+            value: 'Resplandor Final 2',
+        },
+        ])
+        selectComponent2.outputFunction = (data) => { };
+        selectComponent2.setUp();
+
+
+        const selectComponent3 = new BcInputSelectBehavior();
+        selectComponent3.setId('ua.ua3');
+        selectComponent3.setItems([{
+            label: 'Vegeta',
+            value: 'Resplandor Final',
+        },
+        {
+            label: 'Goku',
+            value: 'Resplandor Final 2',
+        },
+        {
+            label: 'Piccolo',
+            value: 'Resplandor Final 3',
+        },
+        {
+            label: 'Freezer',
+            value: 'Resplandor Final 4',
+        },
+        {
+            label: 'Gohan',
+            value: 'Resplandor Final 5',
+        },
+        {
+            label: 'Maestro Mutenroshi',
+            value: 'Resplandor Final 6',
+        },
+        {
+            label: 'Krilin',
+            value: 'Resplandor Final 7',
+        }
+        ])
+        selectComponent3.outputFunction = (data) => { };
+        selectComponent3.setUp();
+    </script>
+</body>
+
+</html>
