@@ -1,0 +1,23 @@
+1. Framework y Orquestación
+LangChain: Es el motor principal que conecta todos los componentes (cargadores, modelos y bases de datos) en una cadena lógica llamada rag_chain.
+
+Streamlit: Proporciona la interfaz de usuario web, gestionando el historial del chat y la visualización de los fragmentos de código en tiempo real.
+
+2. Modelos de Inteligencia Artificial (Google Gemini)
+Gemini 2.5 Flash: El modelo de lenguaje (LLM) encargado de analizar las consultas y generar las respuestas finales de migración de código.
+
+Google Generative AI Embeddings: El modelo (gemini-embedding-001) que traduce el texto de tus archivos HTML a vectores numéricos para que el sistema pueda "entender" su significado.
+
+3. Recuperación y Búsqueda Avanzada (Retriever)
+MultiQueryRetriever: Un componente de LangChain que toma la pregunta original y genera exactamente 3 variaciones para asegurar que no se escape ningún fragmento relevante.
+
+EnsembleRetriever: Un buscador "híbrido" que combina dos métodos (MMR y Similitud) con pesos configurados (70/30) para equilibrar precisión y diversidad de resultados.
+
+Maximal Marginal Relevance (MMR): Algoritmo configurado para evitar que el sistema devuelva fragmentos de código repetidos, priorizando la variedad en la respuesta.
+
+4. Almacenamiento y Carga de Datos
+Chroma DB: La base de datos vectorial donde se indexan y persisten los fragmentos de código de forma local.
+
+GitLoader: Herramienta que clona automáticamente el repositorio de GitHub (dani.git) para extraer el conocimiento más reciente.
+
+CharacterTextSplitter: Encargado de fragmentar los archivos HTML en bloques de 1000 caracteres con un solapamiento (overlap) de 100 para no perder contexto entre piezas.
