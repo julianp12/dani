@@ -1,56 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Te amo Daniela</title>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css\dani.css">
-</head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Daniela ❤️</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:Georgia,'Times New Roman',serif;color:#542838;background:radial-gradient(circle at top,#fff5f7,#f8cbd8 70%,#efabc2);overflow-x:hidden;display:grid;place-items:center;padding:28px}
+.hearts{position:fixed;inset:0;overflow:hidden;pointer-events:none}.heart{position:absolute;bottom:-40px;color:#df6b91;opacity:.45;animation:float 12s linear infinite;font-size:22px}.heart:nth-child(2n){animation-duration:16s;color:#c64c78}.heart:nth-child(3n){animation-duration:19s;font-size:15px}@keyframes float{to{transform:translateY(-115vh) rotate(35deg);opacity:0}}
+.card{position:relative;width:min(700px,100%);padding:38px 30px 34px;background:rgba(255,250,248,.88);border:1px solid #fff;border-radius:28px;box-shadow:0 20px 60px #a64d6b30;text-align:center;backdrop-filter:blur(8px)}.small{letter-spacing:3px;text-transform:uppercase;font:12px Arial;color:#bd5478}.title{font-size:clamp(32px,7vw,54px);margin:10px 0;color:#9c2e55}.subtitle{font-style:italic;color:#bd5478;margin-bottom:25px}.envelope{border:0;background:none;cursor:pointer;margin:5px auto 14px;transition:transform .25s}.envelope:hover{transform:translateY(-5px) scale(1.04)}.env{font-size:90px;filter:drop-shadow(0 8px 6px #a83f6820)}.hint{font:14px Arial;color:#a45a75}.letter{display:none;text-align:left;line-height:1.85;font-size:18px;margin-top:22px;animation:appear .9s ease}.letter.show{display:block}@keyframes appear{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}.letter p{margin:0 0 17px}.signature{text-align:right;font-style:italic;font-size:23px;color:#a2345d;margin-top:25px}.last{display:none;text-align:center;margin-top:24px;padding:20px;border-radius:16px;background:#ffe5ed;color:#9c2e55;font-style:italic;font-size:19px}.last.show{display:block;animation:appear .7s}.btn{margin-top:24px;border:0;border-radius:40px;padding:13px 24px;background:#bd416d;color:white;font:15px Arial;cursor:pointer;box-shadow:0 8px 20px #bd416d30;transition:.2s}.btn:hover{transform:translateY(-2px);background:#a8325d}.footer{margin-top:26px;font:12px Arial;color:#bd7990}.hidden{display:none!important}@media(max-width:500px){.card{padding:28px 20px}.letter{font-size:16px}.env{font-size:75px}}
+</style></head>
 <body>
-    <div class="corazon" onclick="mostrarModal(); lanzarFuegos()">
-        <span class="mensaje">Te amo Daniela</span>
-    </div>
-
-
-    <!-- Ventana Modal -->
-    <div id="modal" class="modal">
-        <div class="modal-contenido">
-            <span class="cerrar" onclick="cerrarModal()">&times;</span>
-            <p>Daniela, cada momento contigo es un tesoro que guardo en mi corazón. Eres mi razón, mi inspiración y mi felicidad. No existe un solo día que no agradezca el haberte encontrado. Tu sonrisa ilumina mis días y tu amor llena mi vida de paz. Te amo más de lo que las palabras pueden describir, y cada vez que te miro, siento que mi amor por ti crece aún más. Eres mi todo, mi amor eterno, y no hay nada que desee más que hacerte feliz cada segundo de mi vida. 💖</p>
-        </div>
-    </div>
-
-    <div id="fuegos"></div> <!-- Contenedor para los fuegos artificiales -->
-
-    <script>
-        // Función para mostrar el modal
-        function mostrarModal() {
-            document.getElementById("modal").style.display = "block";
-        }
-
-        // Función para cerrar el modal
-        function cerrarModal() {
-            document.getElementById("modal").style.display = "none";
-        }
-
-        // Función para generar los fuegos artificiales de corazones
-        function lanzarFuegos() {
-            const contenedor = document.getElementById('fuegos');
-            for (let i = 0; i < 20; i++) {
-                const corazon = document.createElement('div');
-                corazon.classList.add('corazon-fuego');
-                corazon.style.left = `${Math.random() * 100}%`;
-                corazon.style.animationDuration = `${Math.random() * 1 + 1}s`; // Random duration
-                corazon.style.animationDelay = `${Math.random() * 0.5}s`; // Random delay
-                contenedor.appendChild(corazon);
-
-                // Eliminar el corazón después de que termine la animación
-                corazon.addEventListener('animationend', () => {
-                    corazon.remove();
-                });
-            }
-        }
-    </script>
-</body>
-</html>
+<div class="hearts" id="hearts"></div>
+<main class="card">
+<div class="small">Una carta que nace del corazón</div>
+<h1 class="title">Daniela…</h1>
+<div class="subtitle">Hay cosas que todavía quisiera decirte ❤️</div>
+<button class="envelope" id="open" aria-label="Abrir la carta"><div class="env">💌</div></button>
+<div class="hint" id="hint">Toca el sobre para abrir tu carta</div>
+<section class="letter" id="letter">
+<p>Mi Dani,</p>
+<p>No sé si existen palabras suficientes para explicar todo lo que siento por ti, pero quería intentar dejar un pedacito de mi corazón aquí. A veces uno no encuentra la manera perfecta de decir lo importante que alguien se vuelve en su vida, y tú te volviste alguien inmensamente especial para mí.</p>
+<p>Gracias por tus sonrisas, por cada abrazo, por las conversaciones, por los pequeños momentos que quizás parecían cotidianos pero que para mí significaron muchísimo. Guardo con cariño tantos recuerdos contigo; algunos me hacen sonreír y otros me llenan de nostalgia, pero todos tienen un lugar bonito en mí.</p>
+<p>Quiero que sepas que te amo. Amo tu forma de ser, esos detalles que te hacen única, tu manera de mirar el mundo y tantas cosas de ti que quizá nunca alcancé a decirte como merecías. Lo que vivimos fue importante para mí, y no voy a fingir que deja de serlo de un día para otro.</p>
+<p>No escribo esto para presionarte, ni para pedirte que tengas respuestas, ni para hacerte sentir que debes algo. Solo quería que supieras que mi amor por ti ha sido sincero, que agradezco haberte encontrado y que deseo de corazón que la vida te regale cosas hermosas, tranquilidad, alegría y sueños cumplidos.</p>
+<p>Si algún día recuerdas lo nuestro, ojalá también puedas recordar cuánto cariño hubo, cuántas veces quise verte feliz y lo especial que siempre serás en mi historia. Hoy, con todo lo que siento, solo puedo decirte gracias por haber sido parte de mi vida.</p>
+<p>Intento mejorar muchas cosas de mi que en su momento me decias lo mucho que te molestaban y quiza la unica manera de darme cuenta que eran muy necesarias, fue al perder un pedacito de mi, que eras tu, la mujer que amo y quien sabe cuanto mas amare, que no te engañe los estados o quiza las cosas que ves, pues porque extrañarte es lo que sobra en mi, muchas veces al perder una parte de uno sea necesario para reforzar las otras, tu! mi primer amor, mi primer y unico amor, me hizo entender que vivia en una burbuja, una burbuja que me tenia ciego, quiza sea tarde pero muchas veces tarde es temprano para uno darse cuenta de los errores y de la vida, no importa cuanto tiempo pase y que nos depare Dios, la vida y el futuro, pero si en alguna otra vida o futuro o dimencion tengo el privilegio de tomar tu mano, no dudare ni un solo minuto en nunca soltarla, ESTAS HERMOSA!! ME ENCANTAS!!!</p>
+<p>Te amo, Daniela. Con ternura, con gratitud y con todo lo bonito que todavía guardo en el corazón.</p>
+<div class="signature">Con todo mi amor,<br>alguien que te lleva en el corazón ❤️</div>
+</section>
+<button class="btn hidden" id="reveal">Hay algo más que quiero que leas ✨</button>
+<div class="last" id="last">No sé qué nos depare la vida, pero nunca voy a arrepentirme de haberte amado. Gracias por existir, Daniela. ❤️ Si leiste el mensaje espero almenos una reaccion de tu parte</div>
+<div class="footer">Hecha con cariño, solo para ti.</div>
+</main>
+<script>
+const hearts=document.getElementById('hearts');for(let i=0;i<24;i++){let h=document.createElement('span');h.className='heart';h.textContent=Math.random()>.45?'♥':'♡';h.style.left=Math.random()*100+'%';h.style.animationDelay=(-Math.random()*18)+'s';h.style.fontSize=(12+Math.random()*24)+'px';hearts.appendChild(h)}
+const open=document.getElementById('open'),letter=document.getElementById('letter'),hint=document.getElementById('hint'),reveal=document.getElementById('reveal'),last=document.getElementById('last');open.addEventListener('click',()=>{letter.classList.add('show');hint.classList.add('hidden');open.classList.add('hidden');reveal.classList.remove('hidden');});reveal.addEventListener('click',()=>{last.classList.add('show');reveal.classList.add('hidden');last.scrollIntoView({behavior:'smooth',block:'center'});});
+</script></body></html>
